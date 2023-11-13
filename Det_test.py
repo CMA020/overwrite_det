@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import os
 import cv2
 
-model = YOLO(os.path.expanduser('~/overwrite_det/best_28_O.pt'))
+model = YOLO(os.path.expanduser('~/overwrite_det/last_20_OWO.pt'))
 clip_limit = 78  # Set your desired clip limit (78 in this example)
 tile_size = 20
 

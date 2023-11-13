@@ -1,0 +1,7 @@
+8_OWO works with a lot of false positive with low confidence scores
+14_OWO same but better detection for positives
+15_OWO  very less false positives but did not detect Sample_6 
+17_OWO good detecion with few false positives
+20_OWO best in the class
+31_owo works well with very little galse positives with low confidence 
+last_31_19 (works fairly well but potentially overfitting) 
