@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import os
 import cv2
 
-model = YOLO(os.path.expanduser('~/overwrite_det/last_20_OWO.pt'))
+model = YOLO(os.path.expanduser('~/overwrite_det/last_31_OWO.pt'))
 
 def pred(img):
     image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -36,7 +36,7 @@ def pred(img):
 
 if __name__ == '__main__':
     while True:
-        image = cv2.imread("Sample2.jpg")
+        image = cv2.imread("Sample4_1.png")
         #image=cv2.imread("Sample2.jpg")
         # Create an instance of the CLAHE (Contrast Limited Adaptive Histogram Equalization) class
         final=pred(image)
