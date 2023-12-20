@@ -3,5 +3,9 @@
 15_OWO  very less false positives but did not detect Sample_6 
 17_OWO good detecion with few false positives
 20_OWO best in the class
-31_owo works well with very little galse positives with low confidence 
+31_owo works well with very little galse positives with low confidence (best?)
 last_31_19 (works fairly well but potentially overfitting) 
+11_M works with everything but lots of false positive
+12_M decenet but 11_m better
+21_M  avg perf
+

@@ -4,14 +4,15 @@ import cv2
 
 model = YOLO(os.path.expanduser('~/overwrite_det/last_31_OWO.pt'))
 
+
 def pred(img):
     image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     bgr_image = cv2.cvtColor(image, cv2.COLOR_GRAY2BGR)
 
-    img = cv2.resize(img, (2048, 2048))
-    bgr_image = cv2.resize(bgr_image, (2048, 2048))
+    #img = cv2.resize(img, (2048, 2048))
+    #bgr_image = cv2.resize(bgr_image, (2048, 2048))
     model.predict(bgr_image, save=True, show=True, imgsz=(2048, 2048))
-    results = model(bgr_image, imgsz=(2048, 2048),conf=0.55)
+    results = model(bgr_image, imgsz=(2048, 2048),conf=0.48)
 
 
     for result in results:
@@ -32,11 +33,9 @@ def pred(img):
 
 
     return img
-
-
 if __name__ == '__main__':
     while True:
-        image = cv2.imread("Sample4_1.png")
+        image = cv2.imread("Sample6.jpeg")
         #image=cv2.imread("Sample2.jpg")
         # Create an instance of the CLAHE (Contrast Limited Adaptive Histogram Equalization) class
         final=pred(image)
